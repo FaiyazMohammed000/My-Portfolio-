@@ -323,7 +323,8 @@ footer p {
   }
 
   #skills p {
-    font-size: 14px; /* Decrease font size for smaller screens */
+    font-size: 14px;/* Decrease font size for smaller screens */
+    margin-left:-20px;
   }
  
 }
