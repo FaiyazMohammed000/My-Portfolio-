@@ -121,9 +121,15 @@ nav ul li a:hover {
   opacity: 1; /* Show list items */
   transform: translateY(0); /* Move list items to their original position */
 }
+
+
 #skills img {
   width:60px; 
   height: 50px;
+  transition: transform 0.3s ease;
+}
+#skills img:hover {
+  transform: translateY(-5px); /* Move the image 5px up on hover */
 }
 
 #projects {
@@ -245,6 +251,7 @@ footer p {
   background-color: #fff;
 }
 
+
 @media (max-width: 767px) {
   .menu-icon {
     display: block; /* Show the menu icon */
@@ -326,7 +333,7 @@ footer p {
   }
 
   #skills ul {
-    text-align: center; /* Center the skill items */
+    text-align: center;  /*Center the skill items */
   }
 
   #skills ul li {
@@ -344,15 +351,15 @@ footer p {
     width: 50px; /* Adjust image size */
     height: 50px; /* Adjust image size */
     margin-bottom: 10px; /* Add space between image and text */
-    
   }
 
   #skills p {
-    font-size: 14px;/* Decrease font size for smaller screens */
-    margin-left:-20px;
+    font-size: 14px; /* Decrease font size for smaller screens */
+    margin-left: -20px;
+  }
+  #scrollTopButton {
+    bottom: 40px;
+    right: 40px;
   }
  
 }
-
-
-
