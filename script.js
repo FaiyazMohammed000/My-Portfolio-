@@ -136,3 +136,46 @@ var skillsObserver = new IntersectionObserver(revealSkills, { rootMargin: '0px',
 // Observe the skills section
 var skillsSection = document.getElementById('skills');
 skillsObserver.observe(skillsSection);
+
+//TYPING THE MOHAMMED FAIYAZ AGAIN AND AGAIN
+var words = ['MOHAMMED FAIYAZ'];
+var index = 0; // Start with the first word
+var speed = 200; // Typing speed in milliseconds
+var deleteSpeed = 50; // Deleting speed in milliseconds
+var pause = 1000; // Pause between typing and deleting in milliseconds
+
+// Function to simulate typing each letter
+function typeLetter(word, i) {
+  var currentText = document.getElementById('dynamic-heading').textContent;
+  if (i <= word.length) {
+    var newText = word.substring(0, i);
+    document.getElementById('dynamic-heading').textContent = newText;
+    setTimeout(function() {
+      typeLetter(word, i + 1);
+    }, speed);
+  } else {
+    setTimeout(function() {
+      deleteLetter(word, i - 1);
+    }, pause);
+  }
+}
+
+// Function to simulate deleting each letter
+function deleteLetter(word, i) {
+  var currentText = document.getElementById('dynamic-heading').textContent;
+  if (i >= 0) {
+    var newText = word.substring(0, i);
+    document.getElementById('dynamic-heading').textContent = newText;
+    setTimeout(function() {
+      deleteLetter(word, i - 1);
+    }, deleteSpeed);
+  } else {
+    index = (index + 1) % words.length; // Move to the next word (loop back to the beginning if necessary)
+    setTimeout(function() {
+      typeLetter(words[index], 0);
+    }, pause);
+  }
+}
+
+// Start the process with the first word
+typeLetter(words[index], 0);
