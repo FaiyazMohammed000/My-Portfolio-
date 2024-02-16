@@ -142,7 +142,7 @@ var words = ['MOHAMMED FAIYAZ'];
 var index = 0; // Start with the first word
 var speed = 200; // Typing speed in milliseconds
 var deleteSpeed = 50; // Deleting speed in milliseconds
-var pause = 1000; // Pause between typing and deleting in milliseconds
+var pause = 1200; // Pause between typing and deleting in milliseconds
 
 // Function to simulate typing each letter
 function typeLetter(word, i) {
