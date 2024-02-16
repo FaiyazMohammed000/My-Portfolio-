@@ -237,18 +237,18 @@ footer p {
   bottom: 20px;
   right: 20px;
   z-index: 999;
-  background-color: #000000;
-  color: #ffffff;
+  background-color:#fff;
+  color: #000000;
   border: none;
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
 }
 
 #scrollTopButton:hover {
-  background-color: #fff;
+  background-color: #555;
 }
 
 
