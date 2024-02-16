@@ -89,6 +89,8 @@ function closeMenu() {
 menuItems.forEach(item => {
   item.addEventListener('click', closeMenu);
 });
+
+  
 function scrollToTop() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
@@ -102,6 +104,17 @@ function scrollFunction() {
     document.getElementById("scrollTopButton").style.display = "none";
   }
 }
+// Function to check if an element is in the viewport
+function isInViewport(element) {
+  var rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
 // Function to reveal skills list items one by one
 function revealSkills(entries, observer) {
   entries.forEach(entry => {
@@ -123,4 +136,3 @@ var skillsObserver = new IntersectionObserver(revealSkills, { rootMargin: '0px',
 // Observe the skills section
 var skillsSection = document.getElementById('skills');
 skillsObserver.observe(skillsSection);
- 
