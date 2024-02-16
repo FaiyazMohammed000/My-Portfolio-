@@ -102,4 +102,25 @@ function scrollFunction() {
     document.getElementById("scrollTopButton").style.display = "none";
   }
 }
-  
+// Function to reveal skills list items one by one
+function revealSkills(entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      var skillsListItems = entry.target.querySelectorAll('li');
+      skillsListItems.forEach((item, index) => {
+        setTimeout(() => {
+          item.classList.add('show');
+        }, index * 100); // Adjust the delay time (100ms) as needed
+      });
+      observer.unobserve(entry.target);
+    }
+  });
+}
+
+// Create an Intersection Observer instance
+var skillsObserver = new IntersectionObserver(revealSkills, { rootMargin: '0px', threshold: 0.2 });
+
+// Observe the skills section
+var skillsSection = document.getElementById('skills');
+skillsObserver.observe(skillsSection);
+ 
