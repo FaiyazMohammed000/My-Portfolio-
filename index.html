@@ -125,6 +125,16 @@
     <div class="container">
       <h2>Contact Me</h2>
       <h4>Feel free to contact me.</h4>
+      <div id="contact-form">
+        <div id="form-feedback"></div>
+        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+          <input type="hidden" name="access_key" value="b9aafce3-76f2-4048-8cb8-784da36afb78">
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
       <ul>
         <li>Email: mohdfaiyaz2000@gmail.com</li>
         <li>Phone: +91 9502414784</li>
@@ -132,6 +142,7 @@
         <li>GitHub: <a href="https://github.com/FaiyazMohammed000"><u>Mohammed Faiyaz</u> </a></li>
         <button id="download-resume" class="resume-button">Download Resume</button>
       </ul>
+    
   </section>
   <button onclick="scrollToTop()" id="scrollTopButton" title="Go to top">&#8593</button>
   <footer>
