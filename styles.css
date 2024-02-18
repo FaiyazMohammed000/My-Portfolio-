@@ -173,30 +173,34 @@ nav ul li a:hover {
   background-color: #555;
 }
 
-
-
 /* Contact section styles */
 #contact {
   background-color: #333;
   color: #fff;
   padding: 50px 20px;
+  position: relative;
+
 }
 
 #contact h2 {
   font-size: 28px;
   margin-bottom: 20px;
+  text-align: center; 
 }
 
 #contact h4{
   font-size: 18px;
   margin-bottom: 20px;
-  margin-left: 0px;
+  margin-left: 10px;
 }
 
 #contact ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  position: absolute;
+  top: 180px;
+  right: 50px;
 }
 
 #contact ul li {
@@ -212,6 +216,49 @@ nav ul li a:hover {
 #contact ul li a:hover {
   text-decoration: underline;
 }
+
+/* Add this CSS to your existing styles.css file */
+
+#contact-form {
+ display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  flex: 1;
+  margin-left: 0px;
+  margin-top: 0px;
+
+}
+
+#contact-form input,
+#contact-form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+ 
+}
+
+#contact-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#contact-form button:hover {
+  background-color: #0056b3;
+}
+
+#form-feedback {
+  margin-bottom: 20px;
+  color: #ff0000;
+}
+
 
 /* Footer styles */
 footer {
@@ -237,19 +284,20 @@ footer p {
   bottom: 20px;
   right: 20px;
   z-index: 999;
-  background-color:#fff;
+  background-color: #fff;
   color: #000000;
-  border: none;
+  border:none;
   border-radius: 50%;
   width: 40px;
   height: 40px;
   font-size: 20px;
-  cursor: pointer;
+  cursor:pointer;
 }
 
 #scrollTopButton:hover {
   background-color: #555;
 }
+
 
 
 @media (max-width: 767px) {
@@ -315,7 +363,7 @@ footer p {
   }
 
   nav ul li {
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
   }
 
   nav ul li a {
@@ -362,4 +410,31 @@ footer p {
     right: 40px;
   }
  
+  #contact {
+    padding: 70px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contact h2 {
+    margin-left:-200px; 
+    margin-top: -50px;
+  }
+  #contact h4{
+    
+    margin-top: -10px;
+    margin-left: -130px; 
+  }
+
+  #contact-form {
+    margin-top: -10px;
+    margin-left: -70px;
+    margin-bottom: 70px;
+  }
+
+  #contact ul {
+    margin-top: 280px;
+    margin-right: 90px;
+  
+  }
 }
