@@ -417,24 +417,24 @@ footer p {
   }
 
   #contact h2 {
-    margin-left:-200px; 
+    margin-left:-165px; 
     margin-top: -50px;
   }
   #contact h4{
     
     margin-top: -10px;
-    margin-left: -130px; 
+    margin-left: -98px; 
   }
 
   #contact-form {
     margin-top: -10px;
-    margin-left: -70px;
+    margin-left: -50px;
     margin-bottom: 70px;
   }
 
   #contact ul {
     margin-top: 280px;
-    margin-right: 90px;
+    margin-right: 70px;
   
   }
 }
