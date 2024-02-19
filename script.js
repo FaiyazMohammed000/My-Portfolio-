@@ -113,7 +113,7 @@ skillsObserver.observe(skillsSection);
 
 
 //TYPING THE MOHAMMED FAIYAZ AGAIN AND AGAIN
-var words = ['MOHAMMED FAIYAZ'];
+var words = ['Software Engineer'];
 var index = 0; // Start with the first word
 var speed = 200; // Typing speed in milliseconds
 var deleteSpeed = 50; // Deleting speed in milliseconds
