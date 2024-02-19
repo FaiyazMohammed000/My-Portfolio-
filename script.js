@@ -46,32 +46,6 @@ projects.forEach(project => {
   projectsContainer.appendChild(projectDiv);
 });
 
-
-  
-    
-  document.getElementById("download-resume").addEventListener("click", function() {
-    // Replace "path/to/your/resume.pdf" with the actual path to your resume file
-    const resumePath = "Resume 22:11:23.pdf";
-    
-    // Create an anchor element
-    const link = document.createElement("a");
-    
-    // Set the href attribute to the resume path
-    link.href = resumePath;
-    
-    // Set the download attribute to force download
-    link.download = "Resume.pdf";
-    
-    // Append the anchor element to the body
-    document.body.appendChild(link);
-    
-    // Click the link to trigger the download
-    link.click();
-    
-    // Remove the anchor element from the body
-    document.body.removeChild(link);
-  });
-  
   document.querySelector('.menu-icon').addEventListener('click', function() {
     document.querySelector('nav').classList.toggle('active');
   });
@@ -137,6 +111,7 @@ var skillsObserver = new IntersectionObserver(revealSkills, { rootMargin: '0px',
 var skillsSection = document.getElementById('skills');
 skillsObserver.observe(skillsSection);
 
+
 //TYPING THE MOHAMMED FAIYAZ AGAIN AND AGAIN
 var words = ['MOHAMMED FAIYAZ'];
 var index = 0; // Start with the first word
@@ -176,6 +151,5 @@ function deleteLetter(word, i) {
     }, pause);
   }
 }
-
 // Start the process with the first word
 typeLetter(words[index], 0);
