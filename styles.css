@@ -167,7 +167,9 @@ color: #1e082c;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
-
+.project img{
+  margin-left: -15px;
+}
 .project h3 {
   font-size: 24px;
   margin-bottom: 10px;
