@@ -8,7 +8,10 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  /*background-image: url('bk.jpeg');*/
+ /*background-color: #f1d6e3;
+  /*background-color: #9f79b7;*/
+  /*background-color: #6d487e;*/
+ /* background-image: url('bk.jpeg');*/
   background-color: #a375b8;
   background-size: cover; 
   background-position: center;
@@ -22,7 +25,8 @@ body {
 
 /* Header styles */
 header {
-  background: #1e082c;
+  /*background: #1e082c;*/
+  background-color:#1e082c;
   color: #fff;
   padding: 20px 0;
 }
@@ -79,19 +83,20 @@ nav ul li a:hover {
 #experience,#education {
   padding: 50px 20px;
   background-color:#efeeef;
+  /*background-color: #a375b8;*/
   margin-left: 30px;
   margin-right: 30px;
   margin-bottom: 30px;
   margin-top: 30px;
   border-radius: 40px;
-  color:#1e082c;;
+  color: #1e082c;
 }
 #experience h2,#education h2{
 color: #1e082c;
 }
 #skills {
   padding: 50px 20px;
-  background-color:#efeeef;
+  background-color:#efeeef; 
   margin-left: 30px;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -148,7 +153,9 @@ color: #1e082c;
 }
 #projects{
   padding: 50px 0px;
-  background-color: #a375b8;
+  /*background-color: #a375b8;*/
+  background-color:#efeeef;
+
   margin-left: 30px;
   margin-right: 30px;
   margin-bottom: 30px;
