@@ -11,8 +11,9 @@ body {
  /*background-color: #f1d6e3;
   /*background-color: #9f79b7;*/
   /*background-color: #6d487e;*/
- /* background-image: url('bk.jpeg');*/
-  background-color: #a375b8;
+ /* background-image: url('bk.jpeg');
+  background-color: #a375b8;*/
+background-color: #cfd8dc;
   background-size: cover; 
   background-position: center;
 }
@@ -25,8 +26,9 @@ body {
 
 /* Header styles */
 header {
-  /*background: #1e082c;*/
-  background-color:#1e082c;
+  /*background: #1e082c;
+  background-color:#1e082c;*/
+  background-color: #263238;
   color: #fff;
   padding: 20px 0;
 }
@@ -72,12 +74,12 @@ nav ul li a:hover {
 #about h2 {
   font-size: 28px;
   margin-bottom: 20px;
-  color: #fff;
+  color: #000;
 }
 
 #about p {
   font-size: 18px;
-  color: #fff;
+  color: #000;
 }
 
 #experience,#education {
@@ -204,7 +206,8 @@ color: #1e082c;
 
 /* Contact section styles */
 #contact {
-  background-color:#1e082c;
+  /*background-color:#1e082c;*/
+  background-color: #263238;
   color: #fff;
   padding: 50px 20px;
 }
@@ -243,8 +246,9 @@ color: #1e082c;
  
  #contact-form button {
    padding: 10px 20px;
-   background-color: #a375b8;
-   color: #fff;
+   background-color: #cfd8dc;
+   /*background-color: #a375b8;*/
+   color: #000;
    border: none;
    border-radius: 5px;
    cursor: pointer;
@@ -253,6 +257,7 @@ color: #1e082c;
  
  #contact-form button:hover {
    background-color: #a375b8;
+ 
  }
  
 
@@ -279,7 +284,7 @@ color: #1e082c;
 
 /* Footer styles */
 footer {
-  background:#1e082c;
+  background:#000;
   color: #fff;
   text-align:center;
 }
